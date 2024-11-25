@@ -10,9 +10,9 @@ export interface SearchBarProps {
 
 
 export interface ImgData {
-  results: Results;
-  total?: number;
-  total_pages?: number;
+  results: Results[];
+  total: number;
+  total_pages: number;
 }
 export interface Results {
   [key: string]: any;
