@@ -3,6 +3,7 @@ import ImageCard from "../ImageCard/ImageCard";
 import css from "./ImageGallery.module.css";
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ photos, modalOpen }) => {
+  
   return (
     <ul className={css.gallery}>
       {photos !== null &&

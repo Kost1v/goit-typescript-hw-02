@@ -15,11 +15,11 @@ export interface ImgData {
   total_pages: number;
 }
 export interface Results {
-  [key: string]: any;
+  [key: string]: ImageCardProps;
 }
 
 export interface ImageGalleryProps {
-  photos: Results | null;
+  photos: ImgData['results'] | null;
   modalOpen: (imageModalData: ImageModalData) => void;
 }
 
